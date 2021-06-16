@@ -1,0 +1,160 @@
+/* 1 - Base*/
+body{
+    /*ffc6ff*/
+    background:rgb(253, 255, 182);
+    color: black;
+    font-family: vijaya, Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    padding: 0px;
+    margin: 0px;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    padding-bottom: 139px;
+    margin: 0;
+    position: relative;
+}
+h1 {
+  font-family: 'Great Vibes display';
+  font-weight: lighter;
+  color: white;
+  margin: 0;
+}a {
+    text-decoration: none;
+    color: black;  
+    font-weight:bold;
+  }
+a:hover {
+    color: #592121;
+}
+li{
+    list-style-type: none;
+  }
+header {
+    background-color: rgb(255, 214, 165);
+    padding: 35px 30px;
+    box-shadow: rgba(30, 30, 40, 0.2) 0px 5px 4px;
+  }
+.topo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  box-sizing: border-box;
+}
+.topo nav {
+  background-color: rgb(255, 214, 165);
+  font-size: 130%;
+  width: 70%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -85%;
+  box-shadow: rgba(30, 30, 40, 0.5) 1px 1px 5px;
+  border-end-end-radius: 50%;
+  transition: 1s left ease;
+  z-index: 1;
+}
+
+.show-menu {
+  left: 0 !important;
+}
+
+.topo nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-inline-start: 0px;
+}
+.topo nav ul li {
+  padding: 15px 30px;
+  text-align:center;
+}
+.topo nav ul li a {
+  color:  white;
+  font-weight: bolder;
+  padding: 10px;
+}
+.icon-hamburger {
+  font-size: 30px;
+  color: black;
+}
+.description, .types, .content{
+    text-align: justify;
+}
+.member{
+    text-align: center;
+}
+/*Conteúdo*/
+main {
+    padding: 25px;
+}
+/*Rodapé*/
+footer {
+    background-color: rgb(221, 167, 126);
+    color: black;
+    width: 100%;
+    align-self: end;
+    position: absolute;
+    bottom: 0px;
+  }
+  footer p{
+    margin: 0;
+    padding: 30px;
+    font-size: 0.7em;
+    font-weight:lighter;
+    text-align: center;
+  }
+  /*Tela Grande*/
+  @media screen and (min-width: 600px) {
+  .topo nav {
+    width: 100%;
+    background-color: transparent;
+    position: static;
+    box-shadow: none;
+  }
+  .topo nav ul {
+    flex-direction: row;
+  }
+  .topo nav ul li {
+    padding: 0;
+  }
+  .topo nav ul li a {
+    color:white;
+  }
+  .icon-hamburger {
+    display: none;
+  }
+  }
+
+/* 2 - Página de pesquisa */
+.search h2{
+  text-align: center;
+}
+form div {
+  background-color: rgb(255, 214, 165);
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  border-radius: 5px;
+}
+textarea {
+  resize: none;
+  font-size: 1.5em;
+}
+input {
+  font-size: 1.2em;
+  border: 1px solid #333;
+  border-radius: 3px;
+  padding: 2px 20px;
+}
+
+/* 3 - Página de histórico */
+section ul {
+  background-color: rgb(255, 214, 165);
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  border-radius: 5px;
+}

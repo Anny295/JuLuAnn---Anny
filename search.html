@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>JuLuAnn</title>
+</head>
+<body>
+    <header>
+    <div class="topo">
+        <a href="index.html"><img src="assets/img/Logo.svg" alt="Photo" width="90px"></a>
+        <h1>JuLuAnn</h1>
+        <ion-icon name="menu" class="icon-hamburger"></ion-icon>
+        <nav>
+            <ul>
+                <li><a href="search.html">Conheça uma obra de Arte</a></li>
+                <li><a href="historic.html">Meu Histórico</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+        <section class="search">
+            <h2>Busque obras de arte</h2>
+        <form> 
+          <div class="busqueNumeroDeRequisicoes">
+            <label for="numeroSessoes">Informe quantia de sessões que deseja como opção</label>
+            <input type="number" id="numeroSessoes" rows="2" placeholder="[ 1, 2, 3, 4, ... ]"></textarea>
+            <button>Buscar</button>
+          </div>
+          <div>
+              <img src="assets/img/Quadros.svg" id="imageModelo" alt="Photo" width="200px">
+              <p> Acesse este link trocando o nome id (.../id/...) 
+                pelo valor numérico da sua obra escolhida 
+                ::: https://www.artic.edu/iiif/2/
+                id/full/843,/0/default.jpg
+              </p>
+          </div>
+          <div>
+            <label for="suasSessoes">Confira e escolha o id da obra, que possoi retorno (ou seja, as com valor diferente de NULL):</label>
+            <textarea name="suasSessoes" id="suasSessoes" rows="10" disabled></textarea>
+          </div>
+          <!-- <div class="busqueDados">
+            <label for="busqueDados">Insira a obra escolhida</label>
+            <input type="busqueDados" id="busqueDados" rows="2" placeholder="Copie aqui"></textarea>
+            <button id="buscadorIMG">Buscar</button>
+          </div> -->
+        </form>
+        </section>
+      </main>
+
+    <footer>
+        <p>
+           © 2021 - By <a href="https://github.com/ana-Luh">Ana Luh</a> and <a href="https://github.com/Anny295">Anny Jully</a>
+            
+        </p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/api.js"></script>
+</body>
+</html>
